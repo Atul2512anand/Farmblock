@@ -8,7 +8,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: ["*"], // ✅ allow any host
+    allowedHosts: [
+      "434rr9-8080.csb.app", // ✅ your sandbox host
+      "localhost",
+      "127.0.0.1",
+    ],
   },
   plugins: [
     react(),
